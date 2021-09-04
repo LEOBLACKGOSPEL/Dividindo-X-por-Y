@@ -1,2 +1,22 @@
-# Dividindo-X-por-Y
-Dividindo X por Y
+using System;
+
+class Desafio {
+    static void Main() {
+        int limit = Int32.Parse(Console.ReadLine());
+        for (int i = 0; i < limit; i++) 
+        {
+            string[] line = Console.ReadLine().Split(" ");
+            double x = double.Parse(line[0]);
+            double y = double.Parse(line[1]);
+            if (y == 0) {
+                Console.WriteLine("divisao impossivel");
+            } 
+            else 
+            {
+                double divisao = x / y; // Digite aqui o calculo da divisao
+                Console.WriteLine(divisao.ToString("N1"));
+            }
+        }
+    }
+}
+
